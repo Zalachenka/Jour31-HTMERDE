@@ -1,109 +1,40 @@
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-uhut8PejFZO8994oEgm/ZfAv0mW1/b83nczZzSwElbeILxwkN491YQXsCFTE6+nx" crossorigin="anonymous">
-   <link rel="stylesheet" type="text/css" href="eventstyle.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Forms</title>
 
-  <!-- Title -->
-  <title>Forms</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sign-in/">
 
-  <!-- Required Meta Tags Always Come First -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="../../favicon.ico">
-
-  <!-- Google Fonts -->
-  <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-
-  <!-- CSS Implementing Plugins -->
-  <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
-
-  <!-- CSS Space Template -->
-  <link rel="stylesheet" href="../../assets/css/theme.css">
-  <link rel="stylesheet" href="../../assets/css/signin.css">
-</head>
-
-<body>
-
-  <!-- ========== MAIN CONTENT ========== -->
-  <form class="js-validate form-signin p-5">
-    <!-- Logo -->
-    <div class="text-center">
-      <a href="../home/index.html" aria-label="Space">
-     
-      </a>
-    </div>
-    <!-- End Logo -->
-
-    <!-- Title -->
-    <div class="text-center mb-4">
-      <h1 class="h3 mb-0">Please sign in</h1>
-      <p>Signin to manage your account.</p>
-    </div>
-    <!-- End Title -->
-<div id="input">
-    <!-- Input -->
-    <div class="js-form-message mb-3">
-      <div class="js-focus-state input-group form">
-        <div class="input-group-prepend form__prepend">
-          <span class="input-group-text form__text">
-            <span class="fa fa-user form__text-inner"></span>
-          </span>
-        </div>
-        <input type="email" class="form-control form__input" name="email" required
-               placeholder="Email"
-               aria-label="Email"
-               data-msg="Please enter a valid email address."
-               data-error-class="u-has-error"
-               data-success-class="u-has-success">
-      </div>
-    </div>
-    <!-- End Input -->
-
-    <!-- Input -->
-
-    <div class="js-form-message mb-3">
-      <div class="js-focus-state input-group form">
-        <div class="input-group-prepend form__prepend">
-          <span class="input-group-text form__text">
-            <span class="fa fa-lock form__text-inner"></span>
-          </span>
-        </div>
-        <input type="password" class="form-control form__input" name="password" required
-               placeholder="Password"
-               aria-label="Password"
-               data-msg="Your password is invalid. Please try again."
-               data-error-class="u-has-error"
-               data-success-class="u-has-success">
-      </div>
-    </div>
-    <!-- End Input -->
-</div>
-    <div class="row mb-3">
-      <div class="col-6">
-        <!-- Checkbox -->
-        <div class="custom-control custom-checkbox d-flex align-items-center text-muted">
-          <input type="checkbox" class="custom-control-input" id="rememberMeCheckbox">
-          <label class="custom-control-label" for="rememberMeCheckbox">
-            Remember Me
-          </label>
-        </div>
-        <!-- End Checkbox -->
-      </div>
-
-      <div class="col-6 text-right">
-        <a class="float-right" href="recover-account.html">Forgot Password?</a>
-      </div>
-    </div>
-
-    <div class="mb-3">
-      <button type="submit" class="btn btn-block btn-primary">Signin</button>
-    </div>
-
-    <div class="text-center mb-3">
-      <p class="text-muted">Do not have an account? <a href="signup-simple.html">Signup</a></p>
-    </div>
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    <div id="form-center">
+    <form class="form-signin">
+  <img class="mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+  <h1 class="h3 mb-3 font-weight-normal">Please sign in to continue</h1>
+  <label for="inputEmail" class="sr-only">Email address</label>
+  <input type="email" id="input" class="form-control" placeholder="Email address" required autofocus>
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input type="password" id="input" class="form-control" placeholder="Password" required>
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> Remember me
+    </label>
+  </div>
+  <button class="btn btn-lg " type="submit">Sign in</button>
+  <p class="mt-5 mb-3 text-muted">&copy; EventBrite</p>
+  </div>
+</form>
+</body>
+</html>

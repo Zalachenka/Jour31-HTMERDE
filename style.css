@@ -7,8 +7,40 @@
     color: #f0b270; 
     text-align: left;
   }
-   
+   /*<--FORM-->*/
+
+ .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+ @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
 #input
 {
-	width: 50%;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 30px;
+	margin-top: 50px;
 }
+
+#form-center
+{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 100px;
+}
+.btn
+{
+	background-color: #f0b270;
+}
+/*<-- END OF FORM -->*/
